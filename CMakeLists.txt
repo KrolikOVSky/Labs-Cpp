@@ -3,4 +3,4 @@ project(test1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(test1 Price.cpp Main.cpp Main.h)
+add_executable(test1 Price.cpp Main.cpp)
