@@ -1,23 +1,5 @@
 #include <iostream>
 using namespace std;
-/*struct Price{
-public:
-    string nameOfProduct;
-    string nameOfMarket;
-    int priceOfProduct;
-};
-
-Price inputInfo(Price price){
-    cout << "Enter name of product: ";
-    cin >> price.nameOfProduct;
-}
-
-void print(){
-
-    cout << "Product name:" ;
-}*/
-
-
 
 class Price {
     string nameOfProduct;

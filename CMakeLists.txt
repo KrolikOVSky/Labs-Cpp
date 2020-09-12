@@ -3,4 +3,5 @@ project(test1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(test1 Price.cpp Main.cpp)
+add_executable(Lab1_1 src/Lab1/class/Main.cpp src/Lab1/class/Price.h)
+add_executable(Lab1_2 src/Lab1/struct/Main.cpp src/Lab1/struct/Price.h)

@@ -2,7 +2,7 @@
 // Created by Alex on 06.09.2020.
 //
 
-#include "Price.cpp"
+#include "Price.h"
 
 using namespace std;
 
