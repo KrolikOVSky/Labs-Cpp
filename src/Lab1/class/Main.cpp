@@ -1,7 +1,3 @@
-//
-// Created by Alex on 06.09.2020.
-//
-
 #include "Price.h"
 
 using namespace std;

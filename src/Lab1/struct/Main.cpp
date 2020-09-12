@@ -8,16 +8,20 @@ using namespace std;
 
 int main() {
     Price product1, product2, product3;
-    fillData(product1, "Cheese", "Market1", 230);
-    fillData(product2, "Apple", "Market2", 500);
-    fillData(product3, "Cherry", "Market1", 150);
+    product1 = fillData("Cheese", "Market1", 230);
+    product2 = fillData("Apple", "Market2", 500);
+    product3 = fillData( "Cherry", "Market1", 150);
 
     print(product1);
     print(product2);
     print(product3);
 
-    cout << "Compare of 2 products: " << Compare(product1, product2);
-    /*cout << "\t\t\tFirst product\n";
+//    cout << "Comparing markets of products: " << product1.nameOfProduct << " and " << product2.nameOfProduct << " " << Compare(product1, product2);
+    cout << product1.nameOfProduct << " and " << product2.nameOfProduct << Compare(product1, product2) << endl;
+    cout << product1.nameOfProduct << " and " << product3.nameOfProduct << Compare(product1, product3) << endl;
+    cout << product2.nameOfProduct << " and " << product3.nameOfProduct << Compare(product2, product3) << endl;
+
+/*cout << "\t\t\tFirst product\n";
     inputData(product1);
 
     cout << "\t\t\tSecond product\n";
