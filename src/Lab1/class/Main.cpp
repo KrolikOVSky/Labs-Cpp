@@ -1,4 +1,4 @@
-#include "Price.h"
+#include "Price.cpp"
 
 using namespace std;
 
@@ -11,9 +11,14 @@ int main(){
     product1->print();
     product2->print();
 
+
     bool res = product->Compare(product1);
     if(res)cout << "true";
     if(!res)cout << "false";
+
+    delete product;
+    delete product1;
+    delete product2;
 
     return 0;
 }

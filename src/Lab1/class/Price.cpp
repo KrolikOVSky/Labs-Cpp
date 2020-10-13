@@ -12,6 +12,9 @@ public:
         this->priceOfProduct = priceOfProduct;
     }
 
+    ~Price(){
+        cout << "\n\n||||||||||||||Destructor||||||||||||||\n\n";
+    }
         string get_nameOfProduct(){return nameOfProduct;}
         string get_nameOfMarket(){return nameOfMarket;}
         int get_priceOfProduct(){return priceOfProduct;}
@@ -27,5 +30,7 @@ public:
     bool Compare(Price* price){
         return this->get_nameOfMarket() == price->get_nameOfMarket();
     }
+
+
 };
 

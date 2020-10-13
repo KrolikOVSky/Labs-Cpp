@@ -2,7 +2,7 @@
 // Created by Alex on 11.09.2020.
 //
 #include "iostream"
-#include "Price.h"
+#include "Price.cpp"
 
 using namespace std;
 
