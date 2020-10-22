@@ -19,8 +19,6 @@ public:
         string get_nameOfMarket(){return nameOfMarket;}
         int get_priceOfProduct(){return priceOfProduct;}
 
-
-
     void print(){
         cout << "Product = " << get_nameOfProduct() << endl;
         cout << "Market = " << get_nameOfMarket() << endl;
@@ -30,7 +28,5 @@ public:
     bool Compare(Price* price){
         return this->get_nameOfMarket() == price->get_nameOfMarket();
     }
-
-
 };
 

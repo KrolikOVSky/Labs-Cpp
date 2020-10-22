@@ -2,13 +2,14 @@
 
 using namespace std;
 
-struct Price {
+struct Price{
     string nameOfProduct;
     string nameOfMarket;
     double priceOfProduct;
 };
 
-Price fillData(string nameOfProduct, string nameOfMarket, double priceOfProduct) {
+Price fillData(string nameOfProduct, string nameOfMarket, double priceOfProduct)
+{
     Price price;
     price.nameOfMarket = nameOfMarket;
     price.nameOfProduct = nameOfProduct;
@@ -16,13 +17,8 @@ Price fillData(string nameOfProduct, string nameOfMarket, double priceOfProduct)
     return price;
 }
 
-void fillData(Price price, string nameOfProduct, string nameOfMarket, double priceOfProduct) {
-    price.nameOfMarket = nameOfMarket;
-    price.nameOfProduct = nameOfProduct;
-    price.priceOfProduct = priceOfProduct;
-}
-
-Price inputData(Price price) {
+Price inputData(Price price)
+{
     cout << "Enter name of product: ";
     cin >> price.nameOfProduct;
 
@@ -35,13 +31,15 @@ Price inputData(Price price) {
     return price;
 }
 
-void print(Price price) {
+void print(Price price)
+{
     cout << "Product = " << price.nameOfProduct << endl;
     cout << "Market = " << price.nameOfMarket << endl;
     cout << "Price = " << price.priceOfProduct << "\n\n";
 }
 
-string Compare(Price price1, Price price2) {
+string Compare(Price price1, Price price2)
+{
     string res;
     if(price1.nameOfMarket == price2.nameOfMarket) res = " you can buy at the same market";
     else res = " you can\'t buy at the same market ";
