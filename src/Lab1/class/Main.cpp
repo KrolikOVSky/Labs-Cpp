@@ -13,8 +13,8 @@ int main(){
 
 
     bool res = product->Compare(product1);
-    if(res)cout << "true";
-    if(!res)cout << "false";
+    if(res) cout << "true" << endl;
+    if(!res) cout << "false" << endl;
 
     delete product;
     delete product1;

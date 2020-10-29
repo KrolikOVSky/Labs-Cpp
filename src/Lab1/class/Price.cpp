@@ -13,7 +13,7 @@ public:
     }
 
     ~Price(){
-        cout << "\n\n||||||||||||||Destructor||||||||||||||\n\n";
+        cout << "||||||||||||||Destructor||||||||||||||\n";
     }
         string get_nameOfProduct(){return nameOfProduct;}
         string get_nameOfMarket(){return nameOfMarket;}
