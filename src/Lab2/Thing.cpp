@@ -1,18 +1,18 @@
 #include "iostream"
 using namespace std;
 
-
-class Thing{
+class Thing
+{
+protected:
     string name;
 public:
-    explicit Thing(string name){
+    Thing(string name)
+    {
         this->name = name;
     }
-    ~Thing();
 
-    void print(){
+    void print()
+    {
         cout << "Name of thing: " << this->name << endl;
     }
-
-
 };

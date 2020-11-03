@@ -13,13 +13,11 @@ public:
     }
 
     ~Price(){
-        cout << "\n\n||||||||||||||Destructor||||||||||||||\n\n";
+        cout << "||||||||||||||Destructor||||||||||||||\n";
     }
         string get_nameOfProduct(){return nameOfProduct;}
         string get_nameOfMarket(){return nameOfMarket;}
         int get_priceOfProduct(){return priceOfProduct;}
-
-
 
     void print(){
         cout << "Product = " << get_nameOfProduct() << endl;
@@ -30,7 +28,5 @@ public:
     bool Compare(Price* price){
         return this->get_nameOfMarket() == price->get_nameOfMarket();
     }
-
-
 };
 
