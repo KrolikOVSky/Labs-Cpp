@@ -22,28 +22,47 @@ public:
         return (isalpha(value));
     }
 
+    MyChar &operator+=(MyChar &symbol)
+    {
+        cout << this->value << " change " << symbol.value << endl;
+        char temp = this->value;
+        this->value = symbol.value;
+        symbol.value = temp;
+        cout << "char, before " << temp << ", after " << this->value << endl;
+        cout << "char, before " << this->value << ", after " << symbol.value << endl;
+        return *this;
+    }
 
+    friend MyChar &operator--(MyChar &symbol);
 
-    friend MyChar& operator --(MyChar& myInt);
+    friend bool operator==(MyChar &symbol1, MyChar &symbol2);
 };
 
-MyChar& operator --(MyChar& myInt)
+MyChar &operator--(MyChar &symbol)
 {
-    if (myInt.operator!())
+    if (symbol.operator!())
     {
-        myInt.value = char(tolower(myInt.value));
+        cout << symbol.value << " to lower = ";
+        symbol.value = char(tolower(symbol.value));
     }
-    return myInt;
+    return symbol;
+}
+
+bool operator==(MyChar &symbol1, MyChar &symbol2)
+{
+    cout << symbol1.value << " == " << symbol2.value << " ? ";
+    return symbol1.value == symbol2.value;
 }
 
 int main()
 {
-    MyChar myInt('?');
-    cout << !myInt << endl;
-    MyChar myInt2 = --myInt;
-    myInt.print();
-//    MyChar myInt1 = myInt + 7;
-//    myInt.print();
-//    cout << (myInt == myInt2) << endl;
+    MyChar symbol('H');
+    MyChar symbol1('d');
+    cout << "'H' latin alphabet char? ";
+    cout << boolalpha << !symbol << endl;
+    --symbol;
+    symbol.print();
+    symbol1 += symbol;
+    cout << boolalpha << (symbol == symbol1) << endl;
     return 0;
 }
