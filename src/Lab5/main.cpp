@@ -56,7 +56,7 @@ public:
 void minArea(Square &square, Circle &circle)
 {
     cout << "Min area is ";
-    if ( square.getArea() < circle.getArea())
+    if (square.getArea() < circle.getArea())
         square.print();
     else circle.print();
 }

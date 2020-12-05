@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(test1)
+project(Alan)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -11,3 +11,5 @@ add_executable(Lab4 src/Lab4/main.cpp)
 add_executable(Lab5 src/Lab5/main.cpp)
 add_executable(Lab6 src/Lab6/main.cpp)
 add_executable(Lab7 src/Lab7/main.cpp)
+add_executable(Lab8_1 src/Lab8/Task1/main.cpp)
+add_executable(Lab8_2 src/Lab8/Task2/main.cpp)

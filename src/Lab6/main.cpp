@@ -22,7 +22,7 @@ public:
         return (isalpha(value));
     }
 
-    MyChar &operator+=(MyChar &symbol)
+    MyChar &operator +=(MyChar &symbol)
     {
         cout << this->value << " change " << symbol.value << endl;
         char temp = this->value;
